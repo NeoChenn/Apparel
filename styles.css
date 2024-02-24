@@ -1,0 +1,120 @@
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+body{
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.fullContainer{
+    display: flex;
+    height: 800px;
+    max-width: 1530px;
+}
+.woman{
+    max-width: 100%;
+    margin:0px
+}
+.container{
+    background-image: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1220px;
+    margin: 0px;
+}
+.textContainer{
+    margin-bottom: 10rem;
+    width: 610px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+h1{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    line-height: 4.5rem;
+    padding-top: 5rem;
+}
+.logo{
+    margin-top: 8rem;
+}
+.pinkWord{
+    color: var(--Desaturated-Red);
+}
+.paragraph{
+    line-height: 2rem;
+    color: var(--Desaturated-Red);
+    margin-top: -2rem;
+    word-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+.input{
+    display: flex;
+}
+input{
+    border-radius: 10rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 25rem;
+    display: flex;
+    border-color: black;
+}
+.display{
+    position: relative;
+}
+.error{
+    visibility: hidden;
+    position: absolute;
+    left: 40rem;
+    bottom: 16rem;
+}
+
+.errorMessage{
+    visibility: hidden;
+    margin-left: 1.5rem;
+    color: var(--Soft-Red);
+}
+
+form{
+    display: flex;
+}
+.arrow{
+    position: relative;
+    width: 20px;
+    height: 30px;
+    top: 23%;
+    right: 9%;
+}
+/* Style the input with value="Submit" to look like the button with class "arrow" */
+input[type="submit"] {
+    padding: 1.2rem 3rem;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 3rem;
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add pointer cursor on hover */
+    position: absolute;
+    left: 36%;
+    width: 1rem;
+}
+
+  
+  /* Change the appearance of the input on hover */
+input[type="submit"]:hover {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 88%), hsl(0, 74%, 76%));
+}
+
+@media only screen and (max-width: 600px){
+    
+}
